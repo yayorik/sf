@@ -1,0 +1,218 @@
+
+@media(max-width: 1440px){
+    h1{
+        font-size: 6.9vw;
+    }
+    .header__text p{
+        font-size: 2.7vw;
+    }
+}
+
+@media(max-width: 992px){
+    .nav__links{
+        flex-grow: 0.5;
+    }
+    .nav__links a{
+        font-size: 16px;
+    }
+    header .container{
+        background-size:cover;
+    }
+}
+
+@media(max-width: 768px){
+    
+    .nav__links{
+        width: 100vw;
+        height: 100vh;
+        flex-direction: column;
+        position: fixed;
+        background-color: #F4EADE;
+        right: -100vw;
+        top: 0px;
+        justify-content: flex-start;
+        padding: 40px 0 0 0;
+        align-items: flex-end;
+        transition: 1s;
+        transition-delay: 0.5s;
+        z-index: -1;
+    }
+    .nav__links a{
+        font-size: 26px;
+        font-weight: bold;
+        margin: 10px;
+        position: relative;
+        right: -300px;
+        transition: all 1s;
+    }
+    .nav__links a:nth-child(1){
+        transition: all 0.7s;
+        transition-delay: 0.4s; /*задержка*/
+    }
+    .nav__links a:nth-child(2){
+        transition: all 0.9s;
+        transition-delay: 0.3s;
+    }
+    .nav__links a:nth-child(3){
+        transition: all 1.1s;
+        transition-delay: 0.2s;
+    }
+    .nav__links a:nth-child(4){
+        transition: all 0.8s;
+        transition-delay: 0.1s;
+    }
+    .nav__links a:nth-child(5){
+        transition: all 1.5s;
+        transition-delay: 0s;
+    }
+    .nav__social{
+        min-width: 130px;
+    }
+    .hamburger{
+        display: inline-block;
+    }
+    .nav__links_active{ 
+        right: 0;
+        transition:1s;
+        overflow-y: auto;
+    }
+    /* Плавное появление ссылок друг за другом */
+    .nav__links_active a{
+        right: 0;
+    }
+    .nav__links_active a:nth-child(1){
+        transition: all 0.7s;
+        transition-delay: 0s; /*задержка*/
+    }
+    .nav__links_active a:nth-child(2){
+        transition: all 0.9s;
+        transition-delay: 0.1s;
+    }
+    .nav__links_active a:nth-child(3){
+        transition: all 1.1s;
+        transition-delay: 0.2s;
+    }
+    .nav__links_active a:nth-child(4){
+        transition: all 1.3s;
+        transition-delay: 0.3s;
+    }
+    .nav__links_active a:nth-child(5){
+        transition: all 1.5s;
+        transition-delay: 0.4s;
+    }
+    .nav_active{
+        background-position: top right 0;
+        transition-delay: 0s;
+    }
+    header .container{
+        background-position: top 0 right -250px;
+    }
+    h1{
+        font-size: 7.9vw;
+    }
+    .aboutme h2{
+        font-size: 7vw;
+    }
+    .aboutme img{
+        box-shadow: -3px 3px 0 3px #2F496E, 3px -3px 0 3px #2988BC;
+        animation: aboutmeimg 10s linear infinite running;
+        
+    }
+    @keyframes aboutmeimg{
+        0%{
+            box-shadow: -3px 3px 0 3px #2F496E, 3px -3px 0 3px #2988BC;;
+        }
+        50%{
+            box-shadow: -3px 3px 0 3px #2988BC, 3px -3px 0 3px #2F496E;
+        }
+        100%{
+            box-shadow: -3px 3px 0 3px #2F496E, 3px -3px 0 3px #2988BC;
+        }
+    }
+    .header__text p{
+        font-size: 3.7vw;
+    }
+}
+@media(max-width:500px){
+    .aboutme__elements{
+        flex-direction: column
+    }
+    .aboutme__elements img{
+        width:60%;
+        margin: 30px 0 50px 0;
+    }
+    .aboutme__elements p{
+        width:90%;
+    }
+    
+}
+@media(max-width: 425px){
+    h1{
+        font-size: 9.9vw;
+    }
+    .aboutme h2{
+        font-size: 9vw;
+    }
+    .header__text p{
+        font-size: 5.7vw;
+    } 
+    header .container{
+        background-position: top 0 right -470px;
+    }
+    .header__elements{
+        align-items: flex-start;
+        padding-top: 30vh;
+    }
+    .nav__logo{
+        width: 60px;
+        height: 60px;
+    }
+    .hamburger{
+        height: 24px;
+    }
+    .hamburger_active span:nth-child(1){
+        transform: rotate(-45deg);
+        margin-top: 10.42px;
+    }
+    .hamburger_active span:nth-child(3){
+        transform: rotate(45deg);
+        margin-bottom: 11,18px;
+    }
+    
+}
+
+@media(max-width: 320px){
+    .nav__social{
+        position: absolute;
+        background: #2F496E;
+        width: 100vw;
+        max-width: 100vw;
+        top: 60px;
+        left: -16px;
+        padding: 0 30%;
+    }
+    .nav__social a{
+        color: #F4EADE;
+    }
+    .nav__links{
+        top: 0px;
+    }
+}
+
+@media(min-width:425px){
+    .nav__links{
+        top: 0px;
+    }
+}
+
+@media(min-width:1440px){
+    h1{
+        font-size: 90px;
+    }
+}
+
+@media(min-width: 320px) and (max-width:425px){
+    .nav__links{
+        top: 0px;
+    }
+}
